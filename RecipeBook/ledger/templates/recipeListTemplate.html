@@ -3,5 +3,10 @@
     <title>Recipe {{ number }}</title>
     <body>
         <h1>Recipe {{ number }}</h1>
+        <ul>
+            {% for recipe in recipes %}
+                <li>{{ recipe }}</li>
+            {% endfor %}
+        </ul>
     </body>
 </html>
